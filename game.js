@@ -2,6 +2,7 @@ window.onload = function(){
 
     var score = 0;
     var rules = false;
+
     function reset(){
         rules = true;
         score = 0;
@@ -47,7 +48,6 @@ window.onload = function(){
             }
         rules = false;
         }
-         
     }
     var boundaries = document.getElementsByClassName("boundary");
     for (var j = 0; j < boundaries.length; j++){
