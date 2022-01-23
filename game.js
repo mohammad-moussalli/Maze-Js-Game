@@ -1,29 +1,35 @@
 window.onload = function(){
+    
     function reset(){
         scoringSystem() = 0;
     }
+    document.getElementById("start").addEventListener("click", reset);
+
+    function playAgain(){
+        document.getElementById("status").innerHTML= "Begin by moving your mouse over the <q>S</q>."
+    }
+    document.getElementById("start").addEventListener("mouseover", playAgain);
+
 
     function resetColor(){
-        var restart_color = document.getElementsByClassName("boundary");
-        for (i =0; i < restart_color.length; i++){
-            restart_color[i].getElementsByClassName("youlose");
-        }
+
     }
 
     function youWin(){
         document.getElementById("status").innerHTML= "You won"
-        document.getElementsByClassName("boundary").
-        scoringSystem() += 5;
     }
+    document.getElementById("end").addEventListener("mouseover", youWin);
 
     function youLose(){
-        alert("You lose");
-        scoringSystem -= 10;
+        document.getElementById("status").innerHTML= "You lose"
+    }
+     var boundaries = document.getElementsByClassName("boundary");
+    for (var j = 0; j < boundaries.length; j++){
+        boundaries[j].addEventListener("mouseover", youLose);
     }
 
-    function scoringSystem(){
-        var score = 0;
-        return score;
+    function cumulativeScore(){
+        return 0;
     }
 
     function turnRed(){
@@ -31,7 +37,8 @@ window.onload = function(){
     }
 
     function turnGreen(){
-
+        
     }
+
 }
     
