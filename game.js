@@ -18,11 +18,6 @@ window.onload = function(){
     }
     document.getElementById("start").addEventListener("mouseover", playAgain);
 
-
-    function resetColor(){
-
-    }
-
     function youWin(){
         document.getElementById("status").innerHTML= "You won"
         var border_color = document.getElementsByClassName("boundary");
@@ -42,18 +37,6 @@ window.onload = function(){
     var boundaries = document.getElementsByClassName("boundary");
     for (var j = 0; j < boundaries.length; j++){
         boundaries[j].addEventListener("mouseover", youLose);
-    }
-
-    function cumulativeScore(){
-        return 0;
-    }
-
-    function turnRed(){
-
-    }
-
-    function turnGreen(){
-        
     }
 
 }
