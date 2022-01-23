@@ -4,8 +4,8 @@ window.onload = function(){
         scoringSystem() = 0;
         var border_color = document.getElementsByClassName("boundary");
         for (var i = 0; i < border_color.length; i++){
-            border_color[i].style.borderColor = "black";
-        } 
+            border_color[i].style.backgroundColor = "#eeeeee";
+        }  
     }
     document.getElementById("start").addEventListener("click", reset);
 
@@ -13,7 +13,7 @@ window.onload = function(){
         document.getElementById("status").innerHTML= "Begin by moving your mouse over the <q>S</q>."
         var border_color = document.getElementsByClassName("boundary");
         for (var i = 0; i < border_color.length; i++){
-            border_color[i].style.borderColor = "black";
+            border_color[i].style.backgroundColor = "#eeeeee";
         } 
     }
     document.getElementById("start").addEventListener("mouseover", playAgain);
@@ -27,7 +27,7 @@ window.onload = function(){
         document.getElementById("status").innerHTML= "You won"
         var border_color = document.getElementsByClassName("boundary");
         for (var i = 0; i < border_color.length; i++){
-            border_color[i].style.borderColor = "green";
+            border_color[i].style.backgroundColor = "green";
         }
     }
     document.getElementById("end").addEventListener("mouseover", youWin);
@@ -36,7 +36,7 @@ window.onload = function(){
         document.getElementById("status").innerHTML= "You lose"
         var border_color = document.getElementsByClassName("boundary");
         for (var i = 0; i < border_color.length; i++){
-            border_color[i].style.borderColor = "red";
+            border_color[i].style.backgroundColor = "#ff8888";
         }    
     }
     var boundaries = document.getElementsByClassName("boundary");
