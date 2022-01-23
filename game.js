@@ -1,3 +1,4 @@
+window.onload = function(){
     function reset(){
         scoringSystem() = 0;
     }
@@ -32,5 +33,5 @@
     function turnGreen(){
 
     }
-
+}
     
