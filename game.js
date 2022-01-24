@@ -49,9 +49,18 @@ window.onload = function(){
         rules = false;
         }
     }
+  
     var boundaries = document.getElementsByClassName("boundary");
     for (var j = 0; j < boundaries.length; j++){
         boundaries[j].addEventListener("mouseover", youLose);
     }
+    document.getElementById("status").addEventListener("mouseover", youLose);
+    var out_of_bounds = document.getElementsByTagName("p");
+    for (var j = 0; j < out_of_bounds.length; j++){
+        out_of_bounds[j].addEventListener("mouseover", youLose);
+    }
+    
+
+
 }
     
